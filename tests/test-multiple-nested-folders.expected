@@ -1,0 +1,6 @@
+-- IDENTIFY --
+8 ./testMultipleNestedFoldersDataset/folder1/folder1a/file2a
+8 ./testMultipleNestedFoldersDataset/folder1/folder1b/file2b
+8 ./testMultipleNestedFoldersDataset/folder1/folder1c/file2c
+-- PROMOTE --
+TODO
