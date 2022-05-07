@@ -14,7 +14,7 @@ tmp/tests/%.output: tests/%.sh tests/%.expected $(SRC)
 	@(cd $(dir $@)/$* && \
 	  PATH=/bin:/usr/bin:$(abspath src):$(abspath tests) \
 	  PS4='+ ' \
-	    /bin/sh -v $(abspath $<) > $(abspath $@) 2>&1) || ! cat $@
+	    /bin/sh $(abspath $<) > $(abspath $@) 2>&1) || ! cat $@
 
 clean:
 	rm -rf tmp/
