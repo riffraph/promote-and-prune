@@ -1,4 +1,4 @@
--- IDENTIFY --
 8 simpleTestDataset/folder1/file1
--- PROMOTE --
-TODO
+simpleTestDataset/file1
+simpleTestDataset/folder1
+simpleTestDataset

@@ -1,5 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
-echo "-- PROMOTE --"
-echo "TODO"
+function getInput() {
+    while read -r size path; do
+        rootFolder=$(echo $path | sed 's/\/.*$//g')
+
+        mv $path $rootFolder
+
+        find -d $rootFolder
+    done
+}
+
+getInput

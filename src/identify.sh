@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
-echo "-- IDENTIFY --"
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 [directory] [file-size]"
+    exit 1
+fi
 
-find $1 -size 1k -print | xargs ls -sd
+find $1 -size $2 -print | xargs ls -sd
